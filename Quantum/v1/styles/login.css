@@ -1,0 +1,245 @@
+@charset "UTF-8";
+body {
+  background: #EEEEEE 0% 0% no-repeat padding-box;
+  opacity: 1;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0px;
+  padding: 0;
+  margin: 0%;
+  height: 100vh;
+}
+body .header {
+  margin: 0;
+  padding: 0;
+  height: 58px;
+  border-bottom: 2px solid #3AC7EC;
+  background-image: url("../assets/header pattern image.png");
+  background: linear-gradient(#25313F, #25313F);
+}
+body .header .header-logo {
+  padding: 0%;
+  margin-left: 24px;
+  width: 135px;
+  height: 36px;
+  margin-top: 15.77px;
+  margin-bottom: 11.5px;
+}
+body .content {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: auto;
+  flex-grow: 1;
+  min-height: calc(100vh - 58px - 120px);
+}
+body .content .login {
+  padding: 28px;
+  height: 550px;
+  width: 488px;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  opacity: 1;
+  border-top: 4px solid #3AC7EC;
+  margin-bottom: 32px;
+}
+body .content .login .login-header {
+  height: 30px;
+  font-size: 28px;
+  color: #222222;
+  opacity: 1;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+body .content .login .login-header .login-back {
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body .content .login .login-form .selection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+body .content .login .login-form .selection #district-t, body .content .login .login-form .selection #independent {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+body .content .login .login-form .selection #dis-cont, body .content .login .login-form .selection #indp-cont {
+  height: 20px;
+  font-size: 18px;
+  margin-right: 32px;
+  vertical-align: middle;
+}
+body .content .login .login-form .selection input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #1F7A54;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+body .content .login .login-form .selection input[type=radio]:checked {
+  border-color: #1F7A54;
+}
+body .content .login .login-form .selection input[type=radio]:checked:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #1F7A54;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+body .content .login .login-form .state, body .content .login .login-form .District-select {
+  margin-bottom: 20px;
+  max-width: 488px;
+}
+body .content .login .login-form .state-heading, body .content .login .login-form .district-heading {
+  text-align: left;
+  color: #666666;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+body .content .login .login-form .District-select {
+  margin-top: 36px;
+}
+body .content .login .login-form .state-dropdown select, body .content .login .login-form .district-dropdown select {
+  width: 100%;
+  padding: 0;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  color: #333;
+  font-weight: 520;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #929292;
+  font-size: 1rem;
+}
+body .content .login .login-form .state-dropdown, body .content .login .login-form .district-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+body .content .login .login-form .state-dropdown::after, body .content .login .login-form .district-dropdown::after {
+  content: "▼";
+  font-size: 12px;
+  color: #555;
+  position: absolute;
+  right: 0px;
+}
+body .content .login .login-form #username-input, body .content .login .login-form #password-input {
+  margin-top: 30px;
+  border: none;
+  border-bottom: 1px solid #929292;
+  width: 100%;
+  outline: none;
+  padding-bottom: 4px;
+  font-size: medium;
+}
+body .content .login .login-form #forgot-username, body .content .login .login-form #forgot-password {
+  display: flex;
+  justify-content: end;
+  text-align: right;
+  font-size: medium;
+  color: #1F7A54;
+  cursor: pointer;
+  font-size: 20;
+  text-decoration: none;
+}
+body .content .login .login-form .remember {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+}
+body .content .login .login-form .remember #remember-me {
+  border: 1px solid #1F7A54;
+  accent-color: #1F7A54;
+  margin-right: 5px;
+  height: 20px;
+  width: 20px;
+}
+body .content .login .login-form .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 34px;
+  border: 0;
+  cursor: pointer;
+}
+body .content .login .login-form .button #login-button {
+  width: 216px;
+  height: 40px;
+  background: #3FD28B 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px rgba(255, 255, 255, 0.2392156863);
+  opacity: 1;
+  border-radius: 5px;
+}
+body .footer {
+  position: fixed;
+  width: 100vw;
+  height: 74px;
+  background: #E0E1E1;
+  opacity: 1;
+}
+body .footer .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 34px;
+  background: #EEEEEE;
+}
+body .footer #about, body .footer #contact {
+  font-size: small;
+  color: #1F7A54;
+  cursor: pointer;
+  margin: 0 12px;
+  text-decoration: none;
+}
+body .footer .footer-content {
+  color: #616161;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+body .footer .footer-logo, body .footer .separator, body .footer .copy, body .footer .footer-zeus, body .footer .right {
+  margin: 5px;
+}
+body .footer .footer-zeus {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .state, .District-select {
+    max-width: 100%;
+  }
+  .state-dropdown select, .district-dropdown select {
+    padding: 2px;
+  }
+}/*# sourceMappingURL=login.css.map */

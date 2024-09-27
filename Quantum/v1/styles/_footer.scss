@@ -1,0 +1,37 @@
+@import "./variables";
+
+
+.footer {
+    position: fixed;
+    width: 100vw;
+    height: 74px;
+    background: #E0E1E1;
+    opacity: 1;
+
+    .contact {
+        @include FlexCen();
+        height: 34px;
+        background: #EEEEEE;
+    }
+
+    #about, #contact {
+        font-size: small;
+        color: $BGColour;
+        cursor: pointer;
+        margin: 0 12px;
+        text-decoration: none;
+    }
+
+    .footer-content {
+        color: #616161;
+        @include FlexCen();
+    }
+    
+    .footer-logo, .separator, .copy, .footer-zeus, .right {
+        margin: 5px;
+    }
+    
+    .footer-zeus {
+        font-weight: bold;
+    }
+}
