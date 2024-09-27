@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.container{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    height: 100vh;
+    width: 100vw;
+    color: aliceblue;
+    flex-direction: column;
+}
+
+.container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color:#7860dc;
+    margin: 0px;
+    width: 100%
+}
+
+.footer{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color:#7860dc;
+    margin: 0px;
+    width: 100%
+}
+
+.main{
+    display: flex; 
+    height: 100%;
+    flex-grow: 1;
+}
+
+.main > .sidebar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 1;
+    height: 100%;
+    background-color: #36c7c0;
+    
+}
+
+.main > .content {
+
+}
+
+.content1{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-basis: 5;
+    height: 50%;
+    background: linear-gradient(to bottom right, #7860dc, #4084ed, #36c7c0);
+}
+
+.layer{
+
+}
+.content2{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+    background: linear-gradient(to bottom right, #7860dc, #4084ed, #36c7c0);
+}
+
+.content3{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+    background: linear-gradient(to bottom right, #7860dc, #4084ed, #36c7c0);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Gift</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+    <script>
+        document.querySelectorAll('.gift-img').forEach(gift => {
+        gift.addEventListener('mouseover', () => {
+            createConfetti(gift);
+            });
+        });
+
+        function createConfetti(gift) {
+            const colors = ['#FF0D72', '#0ABFBC', '#F9C74F', '#F94144', '#F3722C'];
+            const confettiCount = 100;
+            for (let i = 0; i < confettiCount; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.left = Math.random() * gift.offsetWidth + 'px';
+                confetti.style.animationDuration = (Math.random() * 2 + 1) + 's';
+                gift.appendChild(confetti);
+                setTimeout(() => confetti.remove(), 2000);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <h1>Today is Ronaldo's Birthday</h1>
+        <img id="bff-img" src="images/ronaldo.avif" alt="Ronaldo">
+        <h2 id="bday-age">47 years old</h2>
+        <h4 id="bday-date">
+            <script>
+                document.write(new Date().toDateString());
+            </script>
+        </h4>    
+    </div>
+
+    <div class="gift-section" id="gift1">
+        <h2 class="gift-title">Here's how happy I am for you today 🥳</h2>
+        <h3 class="gift-hint">(Hover over the gift)</h3>
+        <div class="gift-img" id="gift-img-happy"></div>
+    </div>
+
+    <div class="gift-section" id="gift2">
+        <h2 class="gift-title">How people react when you enter the room 😍</h2>
+        <div class="gift-img" id="gift-img-hot"></div>
+    </div>
+    
+    <div class="gift-section" id="gift3">
+        <h2 class="gift-title">If I had to describe you with ONE word 👇</h2>
+        <div class="gift-img" id="gift-img-genius"></div>
+    </div>
+    
+    <div class="gift-section" id="gift4">
+        <h2 class="gift-title">The only person as badass as you 💪</h2>
+        <div class="gift-img" id="gift-img-badass"></div>
+    </div>
+    
+    <div class="gift-section" id="gift5">
+        <h2 class="gift-title">This one's for you, my friend 🥂</h2>
+        <div class="gift-img" id="gift-img-cheers"></div>
+    </div>
+    
+    <p id="footer">
+        <a href="https://youtu.be/GFq6wH5JR2A?si=edG8l77h-G7O19_v" target="_blank">Let's Dance</a>
+    </p>
+    
+    <script src="script.js"></script>
+</body>
+</html>

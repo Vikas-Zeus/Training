@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tweet</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .tweet-container {
+            width: 457px;
+            height: 138px;
+            border: 2px solid #000;
+            display: flex;
+            padding: 4px;
+            box-sizing: border-box;
+            background-color: #fff;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            margin-right: 14px;
+            background-image: url('Images/mosh.jfif'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .tweet-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .username {
+            font-weight: bold;
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 14px;
+        }
+
+        .message {
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 24px;
+        }
+
+        .stats {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            color: #858991;
+        }
+
+        .stats span {
+            display: flex;
+            align-items: center;
+            margin-right: 24px;
+        }
+
+        .stats span:last-child {
+            margin-right: 0;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet-container">
+        <div class="profile-pic"></div>
+        <div class="tweet-content">
+            <div class="username">@moshhamedani</div>
+            <div class="message">I'd love to teach you HTML/CSS!</div>
+            <div class="stats">
+                <span><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Comment_alt_font_awesome.svg" alt="Comment Icon"> 242</span>
+                <span><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Ei-retweet.svg" alt="Retweet Icon"> 142</span>
+                <span><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Line-style-icons-heart.svg" alt="Like Icon"> 6.4K</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

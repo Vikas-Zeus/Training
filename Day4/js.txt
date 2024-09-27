@@ -1,0 +1,85 @@
+
+let fName = 'Vikas';
+const lName = 'Mishra';
+const name = `${lName} ${fName}`;
+
+function funcName(param1 = "default value") {
+	...
+}
+
+//anonymous function
+const funcName = function() {
+    return " ";
+}
+
+//Arrow Function
+const funcName = (params) => {
+    return ;
+}
+
+const dinnerMenu = params => `I'm going to eat a ${params} for dinner`;
+
+typeof name;
+console.log(name.split(' '));
+
+let example = 8.2;
+let ex2 = example.toFixed(2); //8.20  //string 
+
+Boolean()
+
+let arrayName = [];
+arrayName.push(8, 9, 10);
+arrayName.pop();
+
+arrayName.forEach((element) => {
+	console.log(element)
+});
+
+let objName = {
+	var1: val1,
+	var2: [],
+	var3: {
+		...
+	}	
+}
+objName.var1;
+Object.keys(objName); //['var1', 'var2', 'var3', ..]
+Object.values(objName);
+objName.hasOwnProperty('var1'); //true
+
+const { var1, var2, var3: {} } = objName;  // Destructuring objects
+console.log(var1); //val1
+
+=== // check value and datatype // strictly equal
+== // check value is true // loosely equal
+
+let [var1, var2] = ['va1', 'val2', 'val3']
+
+for (let x of iterables){ .... }
+
+let copy = ["newVal1", ...original ]; // ...org //spread operator
+
+// rest operator
+
+// .includes() function return boolean value whether item exist or not
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

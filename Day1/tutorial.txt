@@ -1,0 +1,28 @@
+---HTML---
+<div> block
+<span> inline
+
+
+---CSS---
+text-shadow: (horizontal)px vertical(px) (blur)px color;
+background: linear-gradient(#colorcode, #colorcode);
+justify-content: center; (end, start, center, space-between, space-around, space-evenly) (controls horizontal axis)
+align-items: start, center, end; (control vertical axis)
+display: flex; (justify-content & align-items)
+flex-direction: row, column; (changes axis justify-content & align-items) (changes direction of flex as horizontal or vertical)
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+div { font-family: myFirstFont;}
+
+---Web Fonts--
+1. use a variable font
+2. preload your font file
+3. self-host instead of Google Fonts
+4. Use font-display: optional to prevent layout shift
+
+
+Birthday Gift Card
+font - "Happy Monkey"
+

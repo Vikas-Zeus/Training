@@ -1,0 +1,39 @@
+---SASS---
+
+$varName: red; (properties)
+
+
+
+@import "./variables"; (_variables.scss)
+
+header{
+	background: $varName;
+	...
+	a{
+		....
+	}
+	button{
+		&:hover {
+		}
+		&::after {
+		}
+	}
+}
+
+@mixin name{
+	<--- Similiar to functions --->
+}
+@include name();
+
+@mixin name($variable){
+	....
+	flex-direction: $variable;
+}
+@include name(column);
+
+
+.contact {
+	@extend header;
+	width: 100% - 20%;
+}
+
