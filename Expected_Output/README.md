@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=Zz6eOVaaelI 
+https://scrimba.com/learn/buildcomponents 
+https://www.udacity.com/course/web-accessibility--ud891 
+https://scrimba.com/learn/introductiontojavascript 
+https://scrimba.com/learn/introtoes6 
+https://scrimba.com/learn/intrototypescript 
+https://code.tutsplus.com/tutorials/24-javascript-best-practices-for-beginners--net-5399     
+https://www.youtube.com/watch?v=iiADhChRriM  
+https://wesbos.com/template-strings-html  
