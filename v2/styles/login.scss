@@ -1,0 +1,233 @@
+@import "./variables";
+
+body{
+    background: #EEEEEE 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font-family: $BGText;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0px;
+    padding: 0;
+    margin: 0%;
+    height: 100vh;
+
+    .header{
+        margin: 0;
+        padding: 0;
+        height: 58px;
+        border-bottom: 2px solid #3AC7EC;;
+        background-image: url("../assets/header\ pattern\ image.png");
+        background: linear-gradient(#25313F, #25313F);
+
+        .header-logo{
+            padding: 0%;
+            margin-left: 24px;
+            width: 135px;
+            height: 36px;
+            margin-top: 15.77px;
+            margin-bottom: 11.5px;
+        }
+    }
+
+    .content{
+        margin-top: 50px;
+        @include FlexCen();
+        margin-bottom: auto;
+        flex-grow: 1;
+        min-height: calc(100vh - 58px - 120px);
+
+        .login{
+            padding: 28px;
+            height: 550px;
+            width: 488px;
+            background-color: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            opacity: 1;
+            border-top: 4px solid #3AC7EC;
+            margin-bottom: 32px;
+
+            .login-header {
+                height: 30px;
+                font-size: 28px;
+                color: #222222;
+                opacity: 1;
+                margin-bottom: 32px;
+                @include FlexCen();
+                position: relative;
+
+                .login-back {
+                    position: absolute;
+                    left: 32px;
+                    top: 50%;
+                    transform: translateY(-50%); 
+                }
+            }
+
+            .login-form{
+
+                .selection{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 25px;
+
+                    #district-t, #independent{
+                        margin-right: 8px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                    #dis-cont, #indp-cont {
+                        height: 20px;
+                        font-size: 18px;
+                        margin-right: 32px;
+                        vertical-align: middle;
+                    }
+                    input[type="radio"] {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        width: 20px;
+                        height: 20px;
+                        border: 2px solid $BGColour;
+                        border-radius: 50%;
+                        background-color: white;
+                        position: relative;
+                        cursor: pointer;
+                        margin-right: 8px;
+                        transition: border-color 0.2s ease, background-color 0.2s ease;
+                    }
+                    
+                    input[type="radio"]:checked {
+                        border-color: $BGColour;
+                    }
+                    
+                    input[type="radio"]:checked:before {
+                        content: "";
+                        width: 10px;
+                        height: 10px;
+                        background-color: $BGColour;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        display: block;
+                    }
+                }
+
+                .state, .District-select {
+                    margin-bottom: 20px;
+                    max-width: 488px;
+                }
+                    
+                .state-heading, .district-heading {
+                    text-align: left;
+                    color: #666666;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                }
+                
+                .District-select{
+                    margin-top: 36px;
+                }
+                
+                .state-dropdown select, .district-dropdown select {
+                    width: 100%;
+                    padding: 0;
+                    font-size: 16px;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    cursor: pointer;
+                    color: #333;
+                    font-weight: 520;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid #929292;
+                    font-size: 1rem;
+                }
+                
+                .state-dropdown, .district-dropdown {
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                }
+                
+                .state-dropdown::after, .district-dropdown::after {
+                    content: '▼';
+                    font-size: 12px;
+                    color: #555;
+                    position: absolute;
+                    right: 0px;
+                }
+                    
+
+                #username-input, #password-input{
+                    margin-top: 30px;
+                    border: none;
+                    border-bottom: 1px solid #929292;
+                    width: 100%;
+                    outline: none;
+                    padding-bottom: 4px;
+                    font-size: medium;
+                }
+                
+                #forgot-username, #forgot-password{
+                    display: flex;
+                    justify-content: end;
+                    text-align: right;
+                    font-size: medium;
+                    color: $BGColour;
+                    cursor: pointer;
+                    font-size: 20;
+                    text-decoration: none;
+                }
+
+                .remember{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 34px;
+
+                    #remember-me{
+                        border: 1px solid $BGColour;
+                        accent-color: $BGColour;
+                        margin-right: 5px;
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+                
+                .button{
+                    @include FlexCen();
+                    margin-top: 34px;
+                    border: 0;
+                    cursor: pointer;
+
+                    #login-button{
+                        width: 216px;
+                        height: 40px;
+                        background: #3FD28B 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 3px 5px #ffffff3d;
+                        opacity: 1;
+                        border-radius: 5px;
+                    }
+                }  
+            }
+
+
+        }
+    }
+
+    @import "./footer";
+}
+
+@media (max-width: 768px) {
+    .state, .District-select {
+        max-width: 100%;
+    }
+
+    .state-dropdown select, .district-dropdown select {
+        padding: 2px;
+    }
+}

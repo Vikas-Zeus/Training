@@ -1,0 +1,9 @@
+$BGColour: #1F7A54;
+$BGText: "Quicksand", sans-serif;
+
+@mixin FlexCen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style-org.css">
+    <title>Quantum</title>
+</head>
+<body>
+
+    <header>
+        <div class="index-header">
+            <img class="header-logo" src="assets/logo-header.svg" alt="Quantum">   
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li class="nav-item"><a href="#" data-content="dashboard">Dashboard</a></li>
+                
+                <li class="nav-item has-submenu">
+                    <a href="#" data-content="content">Content <span class="arrow">&#9662;</span></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Course Catalog</a></li>
+                        <li><a href="#">Add Content</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item has-submenu">
+                    <a href="#" data-content="users">Users <span class="arrow">&#9662;</span></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">User Management</a></li>
+                        <li><a href="#">Add User</a></li>
+                    </ul>
+                </li>
+    
+                <li class="nav-item has-submenu">
+                    <a href="#" data-content="reports">Reports <span class="arrow">&#9662;</span></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">View Reports</a></li>
+                        <li><a href="#">Generate Report</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item has-submenu">
+                    <a href="#" data-content="admin">Admin <span class="arrow">&#9662;</span></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Admin Panel</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <ul>
+            <li class="nav-item notification">
+                <a href="#" data-content="notification">
+                    <span class="count">2</span>
+                    <img src="assets/icons/alerts.svg" alt="Notification">
+                    
+                </a>
+                <div class="notification-preview">
+                    <div class="announcement-content-read">
+                        <div class="pa"><span>PA: Wilson Kumar</span><img src="assets/icons/checkbox-checked.svg"></div>
+                        <p class="message"><strong>No classes will be held on 21st Nov</strong></p>
+                        <div class="files"><span>2 files are attached</span><span>15 Sep-2028 at 7:21 pm</span></div>
+                    </div>
+                    <div class="announcement-content-unread">
+                        <div class="pa"><span>PA: Samson White</span><img src="assets/icons/checkbox-unchecked.svg"></div>
+                        <p class="message"><strong>Guest lecture will be held on 20th September</strong></p>
+                        <div class="files"><span>2 files are attached</span><span>15 Sep-2028 at 7:21 pm</span></div>
+                    </div>
+                    <div class="announcement-content-read">
+                        <div class="pa"><span>PA: Wilson Kumar</span><img src="assets/icons/checkbox-checked.svg"></div>
+                        <p class="message"><strong>No classes will be held on 21st Nov</strong></p>
+                        <div class="files"><span>2 files are attached</span><span>15 Sep-2028 at 7:21 pm</span></div>
+                    </div>
+                    <div class="announcement-content-unread">
+                        <div class="pa"><span>PA: Samson White</span><img src="assets/icons/checkbox-unchecked.svg"></div>
+                        <p class="message"><strong>Guest lecture will be held on 20th September</strong></p>
+                        <div class="files"><span>2 files are attached</span><span>15 Sep-2028 at 7:21 pm</span></div>
+                    </div>
+                    <div class="announce-button">
+                        <span><button type="submit" id="show-all">SHOW ALL</button></span>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item announcement">
+                <a href="#" data-content="announcement">
+                    <span class="count">1</span>
+                    <img src="assets/icons/announcements.svg" alt="Announcement">
+                </a>
+                <div class="announcement-preview">
+                    <div class="announcement-content-read">
+                        <div class="pa"><span>PA: Wilson Kumar</span><img src="assets/icons/checkbox-checked.svg"></div>
+                        <p class="message"><strong>No classes will be held on 21st Nov</strong></p>
+                        <div class="files"><span>2 files are attached</span><span>15 Sep-2028 at 7:21 pm</span></div>
+                    </div>
+                    <div class="announcement-content-unread">
+                        <div class="pa"><span>PA: Samson White</span><img src="assets/icons/checkbox-unchecked.svg"></div>
+                        <p class="message"><strong>Guest lecture will be held on 20th September</strong></p>
+                        <div class="files"><span>2 files are attached</span><span>15 Sep-2028 at 7:21 pm</span></div>
+                    </div>
+                    <div class="announcement-content-read">
+                        <div class="pa"><span>PA: Wilson Kumar</span><img src="assets/icons/checkbox-checked.svg"></div>
+                        <p class="message"><strong>No classes will be held on 21st Nov</strong></p>
+                        <div class="files"><span>2 files are attached</span><span>15 Sep-2028 at 7:21 pm</span></div>
+                    </div>
+                    <div class="announcement-content-unread">
+                        <div class="pa"><span>PA: Samson White</span><img src="assets/icons/checkbox-unchecked.svg"></div>
+                        <p class="message"><strong>Guest lecture will be held on 20th September</strong></p>
+                        <div class="files"><span>2 files are attached</span><span>15 Sep-2028 at 7:21 pm</span></div>
+                    </div>
+                    <div class="announce-button">
+                        <span><button type="submit" id="show">SHOW ALL</button></span>
+                        <span><button type="submit" id="create">CREATE NEW</button></span>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item profile">
+                <a href="#" data-content="profile">
+                    <img src="assets/icons/account_circle.svg" alt="Profile">
+                </a>
+            </li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <img src="assets/icons/hamburger-menu.svg" alt="Menu">
+        </div>
+    </header>
+
+    <main id="content-display">
+
+        <div class="selection">
+            <a><div class="selectable" id="courses" data-selected="false">
+                <span><img src="assets/icons/courses.svg" id="courses-logo"></span>
+                <span id="courses-count">4</span>
+                <span id="courses-heading">Courses</span>
+            </div></a>
+            <a><div class="selectable" id="classes" data-selected="false">
+                <span><img src="assets/icons/classes.svg" id="classes-logo"></span>
+                <span id="classes-count">4</span>
+                <span id="classes-heading">Classes</span>
+            </div></a>
+        </div>
+        
+
+        <div class="showing">
+            <div id="showing-result">
+                showing 4 of 4 courses
+            </div>
+            <div class="sort">
+                Sort By:
+                <div class="sort-dropdown">
+                    <select id="sort-option" name="sort" required>
+                        <option value=""></option>
+                        <option value="Course Name">Course Name</option>
+                    </select>
+                </div>
+                <img src="assets/icons/sort.svg" class="sort-icon">
+            </div>
+        </div>
+
+        <hr class="custom-line">
+
+        <div class="courses-list">
+
+            <div class="courses-card" id="Acceleration">
+                <div class="courses-info">
+                    <div class="courses-img">
+                        <img src="assets/images/imageMask.png">
+                    </div>
+                    <div class="courses-details">
+                        <div class="courses-heading">
+                            <div class="courses-title">
+                                Accelaration
+                            </div>
+                            <div class="courses-star">
+                                <img src="assets/icons/favourite.svg">
+                            </div>
+                        </div>
+                        <div class="courses-sub">
+                            Physics | Grade 7 +2
+                        </div>
+                        <div class="courses-unit">
+                            <span class="courses-unit-count">4</span><span class="e8-space">Units</span>
+                            <span class="courses-unit-count">18</span><span class="e8-space">Lessons</span>
+                            <span class="courses-unit-count">24</span><span class="e8-space">Topics</span>
+                        </div>
+                        <div class="courses-lecture-selection">
+                            <select id="sort-lecture" name="sort-lec" required>
+                                <option value="">No Classes</option>
+                                <option value="All Classes">All Classes</option>
+                                <option value="Franks B">Mr. Frank's Class B</option>
+                            </select>
+                        </div>
+                        <div class="courses-student-dur">
+                            50 students | 21-Jan-2020 - 21-Aug-2020
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-insight">
+                    <div><img src="assets/icons/preview.svg"></div>
+                    <div><img src="assets/icons/manage course.svg"></div>
+                    <div id="insights3"><img src="assets/icons/grade submissions.svg"></div>
+                    <div id="insights4"><img src="assets/icons/reports.svg"></div>
+                </div>
+            </div>
+
+            
+            <div class="courses-card" id="Speed">
+                <div class="courses-info">
+                    <div class="courses-img">
+                        <img src="assets/images/imageMask-1.png">
+                    </div>
+                    <div class="courses-details">
+                        <div class="courses-heading">
+                            <div class="courses-title">
+                                Displacement, Velocity and Speed
+                            </div>
+                            <div class="courses-star">
+                                <img src="assets/icons/favourite.svg">
+                            </div>
+                        </div>
+                        <div class="courses-sub">
+                            Physics | Grade 6 +3
+                        </div>
+                        <div class="courses-unit">
+                            <span class="courses-unit-count">2</span><span class="e8-space">Units</span>
+                            <span class="courses-unit-count">15</span><span class="e8-space">Lessons</span>
+                            <span class="courses-unit-count">20</span><span class="e8-space">Topics</span>
+                        </div>
+                        <div class="courses-lecture-selection">
+                            <select id="sort-lecture" name="sort-lec" required>
+                                <option value="" id="no-classes">No Classes</option>
+                                <option value="All Classes">All Classes</option>
+                                <option value="Franks B">Mr. Frank's Class B</option>
+                            </select>
+                        </div>
+                        <div class="courses-student-dur">
+                            <!-- 50 students | 21-Jan-2020 - 21-Aug-2020 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-insight">
+                    <div><img src="assets/icons/preview.svg"></div>
+                    <div><img src="assets/icons/manage course.svg"></div>
+                    <div id="insights3"><img src="assets/icons/grade submissions.svg"></div>
+                    <div id="insights4"><img src="assets/icons/reports.svg"></div>
+                </div>
+            </div>
+
+
+            <div class="courses-card" id="bio">
+                <div class="courses-info">
+                    <div class="courses-img">
+                        <img src="assets/images/imageMask-3.png">
+                    </div>
+                    <div class="courses-details">
+                        <div class="courses-heading">
+                            <div class="courses-title">
+                                Introduction to Biology: Micro organisms and how they...
+                                <!-- affect the other Life Systems in En... -->
+                            </div>
+                            <div class="courses-star">
+                                <img src="assets/icons/favourite.svg">
+                            </div>
+                        </div>
+                        <div class="courses-sub">
+                            Biology | Grade 4 +1
+                        </div>
+                        <div class="courses-unit">
+                            <span class="courses-unit-count">5</span><span class="e8-space">Units</span>
+                            <span class="courses-unit-count">16</span><span class="e8-space">Lessons</span>
+                            <span class="courses-unit-count">22</span><span class="e8-space">Topics</span>
+                        </div>
+                        <div class="courses-lecture-selection">
+                            <select id="sort-lecture" name="sort-lec" required>
+                                <option value="">No Classes</option>
+                                <option value="All Classes">All Classes</option>
+                                <!-- <option value="Franks B">Mr. Frank's Class B</option> -->
+                            </select>
+                        </div>
+                        <div class="courses-student-dur">
+                            300 students
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-insight">
+                    <div><img src="assets/icons/preview.svg"></div>
+                    <div><img src="assets/icons/manage course.svg"></div>
+                    <div id="insights3"><img src="assets/icons/grade submissions.svg"></div>
+                    <div id="insights4"><img src="assets/icons/reports.svg"></div>
+                </div>
+            </div>
+
+            <div class="courses-card" id="maths">
+                <div class="expired">
+                    Expired
+                </div>
+                <div class="courses-info">
+                    <div class="courses-img">
+                        <img src="assets/images/imageMask-2.png">
+                    </div>
+                    <div class="courses-details">
+                        <div class="courses-heading">
+                            <div class="courses-title">
+                                Introduction to High School Mathematics
+                            </div>
+                            <div class="courses-star">
+                                <img src="assets/icons/favourite.svg">
+                            </div>
+                        </div>
+                        <div class="courses-sub">
+                            Mathematics | Grade 8 +3
+                        </div>
+                        <div class="courses-unit">
+        
+                        </div>
+                        <div class="courses-lecture-selection">
+                            <select id="sort-lecture" name="sort-lec" required>
+                                <option value="">No Classes</option>
+                                <option value="All Classes">All Classes</option>
+                                <option value="Franks B">Mr. Frank's Class B</option>
+                            </select>
+                        </div>
+                        <div class="courses-student-dur">
+                            44 students | 14-Oct-2019 - 20-Oct-2020
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-insight">
+                    <div><img src="assets/icons/preview.svg"></div>
+                    <div><img src="assets/icons/manage course.svg"></div>
+                    <div id="insights3"><img src="assets/icons/grade submissions.svg"></div>
+                    <div id="insights4"><img src="assets/icons/reports.svg"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <span><a href="#" id="about">ABOUT</a></span>
+            <span>|</span>
+            <span><a href="#" id="contact">CONTACT US</a></span>
+        </div>
+        <div class="footer-content" role="contentinfo">
+            <span class="footer-logo"><img src="./assets/icons/logo used in footer.svg" alt="Zeus Systems Logo"></span>
+            <span class="separator">|</span>
+            <span class="copy">Copyright &copy; 2020-2021</span>
+            <span class="footer-zeus">Zeus Systems Pvt. Ltd.</span>
+            <span class="right">All rights reserved</span>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
