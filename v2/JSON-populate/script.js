@@ -80,22 +80,22 @@ subMenuItems.forEach(item => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const courses = document.getElementById('courses');
-    const classes = document.getElementById('classes');
+document.getElementById('courses').addEventListener('click', function() {
+    this.classList.add('selected');
+    this.classList.remove('not-selected');
+    
+    const classesDiv = document.getElementById('classes');
+    classesDiv.classList.remove('selected');
+    classesDiv.classList.add('not-selected');
+});
 
-    function handleSelection(clickedElement, otherElement) {
-        clickedElement.classList.add('selected');
-        otherElement.classList.remove('selected');
-    }
-
-    courses.addEventListener('click', function () {
-        handleSelection(courses, classes);
-    });
-
-    classes.addEventListener('click', function () {
-        handleSelection(classes, courses);
-    });
+document.getElementById('classes').addEventListener('click', function() {
+    this.classList.add('selected');
+    this.classList.remove('not-selected');
+    
+    const coursesDiv = document.getElementById('courses');
+    coursesDiv.classList.remove('selected');
+    coursesDiv.classList.add('not-selected');
 });
 
 
